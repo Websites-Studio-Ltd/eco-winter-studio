@@ -1,5 +1,6 @@
 {
     "devDependencies": {
+        "browser-sync-webpack-plugin": "^2.3.0",
         "laravel-mix": "^6.0.41"
     },
     "workspaces": {
@@ -7,5 +8,8 @@
             "modules/backend",
             "modules/system"
         ]
+    },
+    "dependencies": {
+        "browser-sync": "^2.27.10"
     }
 }
