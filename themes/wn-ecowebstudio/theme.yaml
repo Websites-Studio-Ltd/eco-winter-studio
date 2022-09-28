@@ -1,8 +1,8 @@
-name: "wn-ecowebstudio"
-description: "No description provided yet..."
-author: "Winter CMS Scaffold"
-homepage: "https://example.com"
-code: "wn-ecowebstudio"
+name: wn-ecowebstudio
+description: 'Custom theme for Eco Web Studio'
+author: 'Websites Studio Ltd'
+homepage: 'https://websitesstudio.ltd'
+code: wn-ecowebstudio
 form:
     fields:
         googleanalytics_id:

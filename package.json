@@ -1,12 +1,16 @@
 {
     "devDependencies": {
+        "autoprefixer": "^10.4.12",
         "browser-sync-webpack-plugin": "^2.3.0",
-        "laravel-mix": "^6.0.41"
+        "laravel-mix": "^6.0.41",
+        "postcss": "^8.4.16",
+        "tailwindcss": "^3.1.8"
     },
     "workspaces": {
         "packages": [
             "modules/backend",
-            "modules/system"
+            "modules/system",
+            "themes/wn-ecowebstudio"
         ]
     },
     "dependencies": {
