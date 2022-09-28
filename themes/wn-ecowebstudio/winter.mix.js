@@ -8,7 +8,7 @@ mix.postCss('assets/styles/base.css', 'assets/styles/theme.css', [
 ]);
 
 mix.browserSync({
-  proxy: 'https://devops.websitesstudio.ltd/projects/ecowebstudio',
+  proxy: 'http://localhost/projects/eco-winter-studio',
   open: false,
   notify: false,
   files: [

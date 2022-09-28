@@ -1,4 +1,4 @@
-const basePath = '/var/www/html/projects/ecowebstudio';
+const basePath = '/var/www/html/projects/eco-winter-studio';
 const { assertSupportedNodeVersion } = require(basePath + '/node_modules/laravel-mix/src/Engine');
 
 module.exports = async () => {
@@ -12,8 +12,8 @@ module.exports = async () => {
     mix.listen('init', function (mix) {
         // Setup Winter path aliases
         mix._api.alias({
-            '$': '/var/www/html/projects/ecowebstudio/plugins',
-            '~': '/var/www/html/projects/ecowebstudio',
+            '$': '/var/www/html/projects/eco-winter-studio/plugins',
+            '~': '/var/www/html/projects/eco-winter-studio',
         });
         // disable notifications if not in watch
         mix._api.disableNotifications();
@@ -65,7 +65,7 @@ module.exports = async () => {
         });
     });
 
-    require('/var/www/html/projects/ecowebstudio/themes/wn-ecowebstudio/winter.mix.js');
+    require('/var/www/html/projects/eco-winter-studio/themes/wn-ecowebstudio/winter.mix.js');
 
     await mix.installDependencies();
     await mix.init();
