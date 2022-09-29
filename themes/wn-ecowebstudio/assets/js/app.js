@@ -31,3 +31,4 @@
 if (typeof(gtag) !== 'function') {
     gtag = function() { console.log('GoogleAnalytics not present.'); }
 }
+
