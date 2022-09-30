@@ -2,9 +2,10 @@ title = "Home"
 url = "/"
 layout = "default"
 ==
+<!-- Hero -->
 <section class="border-b-4 border-black">
     <div
-        class="relative px-4 pt-16 mx-auto lg:py-32 md:px-8   bg-brand-blue"
+        class="relative px-4 pt-16 mx-auto lg:py-40 md:px-8   bg-brand-blue"
     >
         <div class="max-w-xl mx-auto lg:max-w-screen-2xl">
             <div class="mb-16 lg:mb-0">
@@ -58,19 +59,19 @@ layout = "default"
         </div>
     </div>
 </section>
+<!-- End hero -->
 
-<section>
-    <div class="container mx-auto py-3 md:py-10 max-w-screen-2xl p-2 md:p-8">
+<!-- Services -->
+<section class="bg-cover bg-bottom" 
+  style="background-image: url({{'assets/images/bg-clouds.svg'|theme}})">
+    <div class="container mx-auto py-3 md:py-6 max-w-screen-2xl p-2 md:p-8">
         <div class="text-center space-y-2 py-5 md:py-20 max-w-5xl mx-auto">
             <h1 class="text-2xl md:text-5xl text-gray-800 font-bold tracking-tighter capitalize">Affordable hosting - no catches!</h1>
             <p class="text-xs md:text-base">We know how expensive owning a website can be, which is why we offer some of the lowest prices in the UK. </p>
         </div>
-
-       
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 grid-rows-2 grid-flow-row gap-10  place-items-center justify-items-stretch">
-
-            {# Web Hosting #}
-            <div class="border-4 border-black rounded-md w-full shadow-2xl">                
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 grid-flow-row gap-10 place-content-center justify-center">
+            <!-- Web Hosting -->
+            <div class="border-4 border-black bg-white rounded-md w-full shadow-2xl">                
                 <header class="bg-brand-green border-b-4 border-black p-4 text-center  rounded-t">
                     <h2 class="text-xl md:text-3xl font-extrabold tracking-light text-white drop-shadow">Web Hosting</h2>
                 </header>
@@ -135,12 +136,12 @@ layout = "default"
                     <a href="{{ 'web-hosting'|page }}" class="bg-brand-blue hover:bg-sky-600 px-8 py-4 rounded-lg text-white text-center w-full">View Hosting Plans</a>
                 </div>          
             </div>
-            {# End Web Hosting #}  
+            <!-- End Web Hosting -->  
 
-            {# VPS Hosting #}
-            <div class="border-4 border-black rounded-md w-full  shadow-2xl">                
+            <!-- VPS Hosting -->
+            <div class="border-4 border-black bg-white rounded-md w-full  shadow-2xl">                
                 <header class="bg-brand-green border-b-4 border-black p-4   text-center  rounded-t">
-                    <h2 class="text-xl md:text-3xl font-extrabold tracking-light text-white drop-shadow">VPS Hosting</h2>
+                    <h2 class="text-xl md:text-3xl font-extrabold tracking-light text-white drop-shadow">Unmanaged VPS</h2>
                 </header>
                 <div class="p-4 text-center ">
                     <p class="text-2xl font-bold text-brand-blue">
@@ -190,12 +191,12 @@ layout = "default"
                     <a href="{{ 'vps-hosting'|page }}" class="bg-brand-blue hover:bg-sky-600 px-8 py-4 rounded-lg text-white w-full text-center">View VPS Plans</a>
                 </div>          
             </div>
-            {# End  VPS Hosting #}  
+            <!-- End  VPS Hosting -->  
             
-             {# Managed Hosting #}
-            <div class="border-4 border-black rounded-md w-full  shadow-2xl">                
+             <!-- Managed Hosting -->
+            <div class="border-4 border-black bg-white rounded-md w-full  shadow-2xl">                
                 <header class="bg-brand-green border-b-4 border-black p-4   text-center  rounded-t">
-                    <h2 class="text-xl md:text-3xl font-extrabold tracking-light text-white drop-shadow">Managed Hosting</h2>
+                    <h2 class="text-xl md:text-3xl font-extrabold tracking-light text-white drop-shadow">Managed VPS</h2>
                 </header>
                 <div class="p-4 text-center ">
                     <p class="text-2xl font-bold text-brand-blue">
@@ -256,14 +257,13 @@ layout = "default"
                   
                 </div>
                 <div class="p-4 md:p-8 flex justify-center text-lg">
-                    <a href="{{ 'vps-hosting'|page }}" class="bg-brand-blue hover:bg-sky-600 px-8 py-4 rounded-lg text-white w-full text-center">View VPS Plans</a>
+                    <a href="{{ 'vps-hosting'|page }}" class="bg-brand-blue hover:bg-sky-600 px-8 py-4 rounded-lg text-white w-full text-center">View Managed VPS Plans</a>
                 </div>          
             </div>
-            {# Managed Hosting #}  
+            <!-- Managed Hosting -->  
 
-
-            {# Domains #}
-            <div class="border-4 border-black rounded-md w-full  shadow-2xl">                
+            <!-- Domains -->
+            <div class="border-4 border-black bg-white rounded-md w-full  shadow-2xl">                
                 <header class="bg-brand-green border-b-4 border-black p-4   text-center  rounded-t">
                     <h2 class="text-xl md:text-3xl font-extrabold tracking-light text-white drop-shadow">Domains</h2>
                 </header>
@@ -279,44 +279,41 @@ layout = "default"
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
-                    </span>Spin up your VPS in 50s
+                    </span>100s of top-level domains
                   </p>
                   <p class="flex items-center text-gray-600 mb-2">
                     <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-brand-blue text-white rounded-full flex-shrink-0">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
-                    </span>Unlimited bandwidth
+                    </span>Buy or transfer
                   </p>
                   <p class="flex items-center text-gray-600 mb-2">
                     <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-brand-blue text-white rounded-full flex-shrink-0">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
-                    </span>Full root access
+                    </span>Privacy options
                   </p>
-                  <p class="flex items-center text-gray-600 mb-2">
+                  <p class="flex items-center text-gray-600 mb-24">
                     <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-brand-blue text-white rounded-full flex-shrink-0">
                       <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
                         <path d="M20 6L9 17l-5-5"></path>
                       </svg>
-                    </span>Windows &amp; Linux support
-                  </p>
-                  <p class="flex items-center text-gray-600 mb-16">
-                    <span class="w-4 h-4 mr-2 inline-flex items-center justify-center bg-brand-blue text-white rounded-full flex-shrink-0">
-                      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" class="w-3 h-3" viewBox="0 0 24 24">
-                        <path d="M20 6L9 17l-5-5"></path>
-                      </svg>
-                    </span>1 Tbps+ Anti-DDoS
+                    </span>Simple control panel
                   </p>
                   
                 </div>
                 <div class="p-4 md:p-8 flex justify-center text-lg">
-                    <a href="{{ 'web-hosting'|page }}" class="bg-brand-blue hover:bg-sky-600 px-8 py-4 rounded-lg text-white w-full text-center">View VPS Plans</a>
+                    <a href="{{ 'web-hosting'|page }}" class="bg-brand-blue hover:bg-sky-600 px-8 py-4 rounded-lg text-white w-full text-center">Find a domain</a>
                 </div>          
             </div>
-            {# End Domains #}  
+            <!-- End Domains -->  
 
         </div>     
     </div>
 </section>
+<!-- End Services -->
+
+
+
